@@ -1,0 +1,157 @@
+/*@import '~antd/dist/antd.css';
+.h100{
+    height: calc(100vh);
+}
+*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+ .main-conteiner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    background-image: url('./images/gamePlaceBackground.4b933165.jpg');
+ }
+
+ 
+ .tablo{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 5px;
+    cursor: pointer;
+ }
+ .tablo__game{
+    width: 50vh;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+    
+ }
+ .tablo__kletka{
+    background-color: rgb(174, 137, 208);
+    border-radius: 3px;
+    position: relative;
+  }
+  
+  .tablo__logo{
+    position:absolute;
+    font-weight: 700;
+    left: 3px;
+    top: 3px;
+  }
+  .tablo__logo-start{
+      width: 9vh;
+      height: 5vh;  
+      right: 3px;
+      top: 3px;
+      background-image: url('./images/start.png');
+      background-size: cover;
+  }
+    .tablo__logo-false-end{
+      font-size: 3vh;
+      color: #ff1100;
+     }
+    .tablo__logo-viktory{
+      font-size: 7vh;
+      color: #3cff00;
+     
+    }
+    .tablo__logo-end{
+      font-size: 7vh;
+      color: #ff1100;
+      top: -2px;
+    
+    }
+
+.steps{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    max-height: 30%;
+    overflow: auto;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content: flex-start;
+}
+
+
+.steps__step{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 9vh;
+     margin-right: 5px;
+     width: 9vh;
+     background-color: rebeccapurple;
+     border-radius: 5px;
+     transition-property: background-color;
+     transition-duration: 2s;
+     transition-delay: 1s;
+     margin-bottom: 5px;
+ }
+
+.steps__logo{
+    width: 24px;
+    height: 24px;
+}
+
+ .steps__strelka-up{
+    background-image: url('./images/up.png')
+ }
+
+ .steps__strelka-left{
+    background-image: url('./images/left.png')
+}
+.steps__strelka-right{
+    background-image: url('./images/right.png')
+}
+
+.steps__strelka-bottom{
+    background-image: url('./images/bottom.png')
+}
+
+
+
+.btns{
+    max-height: 10%;
+    text-align: center;
+}
+
+.btns-start:hover{
+    cursor: pointer;
+}
+.btns-start{
+    height: 5vh;
+    width: 50vh;
+    border: none;
+    border-radius: 5px;
+}
+.btns-start:active{
+    background-color: cadetblue;
+}
+
+/*
+
+.main{
+    /*width:60%;
+    margin:auto;
+    background:silver;
+    overflow:hidden;
+   border:1px solid red;
+    text-align: center;
+    width: 50vh;
+    height: 50vh;
+}/*
+.main::before{
+    content:"";
+    padding-top: 100%;
+    float: left;
+}*/
